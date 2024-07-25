@@ -41,7 +41,7 @@ class _MyAppState extends State<MyApp> {
 
   Widget _buildCameraPreview() {
     if (!_cameraController.value.isInitialized) {
-      return Container(); // Return an empty container if camera is not initialized
+      return Container();
     }
 
     return AspectRatio(
@@ -87,7 +87,7 @@ class _MyAppState extends State<MyApp> {
                           padding: const EdgeInsets.all(16.0),
                           child: Text(
                             textOutput,
-                            style: TextStyle(color: Colors.black, fontSize: 20),
+                            style: const TextStyle(color: Colors.black, fontSize: 20),
                           ),
                         ),
                       )),
